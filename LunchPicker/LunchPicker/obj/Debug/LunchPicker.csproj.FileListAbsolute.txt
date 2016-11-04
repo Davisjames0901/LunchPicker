@@ -1,0 +1,9 @@
+c:\users\jdavis2\documents\visual studio 2015\Projects\LunchPicker\LunchPicker\bin\Debug\LunchPicker.exe.config
+c:\users\jdavis2\documents\visual studio 2015\Projects\LunchPicker\LunchPicker\bin\Debug\LunchPicker.exe
+c:\users\jdavis2\documents\visual studio 2015\Projects\LunchPicker\LunchPicker\bin\Debug\LunchPicker.pdb
+c:\users\jdavis2\documents\visual studio 2015\Projects\LunchPicker\LunchPicker\obj\Debug\LunchPicker.csprojResolveAssemblyReference.cache
+c:\users\jdavis2\documents\visual studio 2015\Projects\LunchPicker\LunchPicker\obj\Debug\LunchPicker.Form1.resources
+c:\users\jdavis2\documents\visual studio 2015\Projects\LunchPicker\LunchPicker\obj\Debug\LunchPicker.Properties.Resources.resources
+c:\users\jdavis2\documents\visual studio 2015\Projects\LunchPicker\LunchPicker\obj\Debug\LunchPicker.csproj.GenerateResource.Cache
+c:\users\jdavis2\documents\visual studio 2015\Projects\LunchPicker\LunchPicker\obj\Debug\LunchPicker.exe
+c:\users\jdavis2\documents\visual studio 2015\Projects\LunchPicker\LunchPicker\obj\Debug\LunchPicker.pdb
