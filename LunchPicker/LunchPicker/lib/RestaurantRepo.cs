@@ -22,9 +22,17 @@ namespace LunchPicker.lib
 		{
 			if (File.Exists(CsvPath))
 			{
-				
+                var text = File.ReadAllLines(CsvPath);
+                foreach(var item in text)
+                {
+                    var tokens = item.Split(',');
+                    if(!csv.ContainsKey(tokens[0]))
+                    {
+                        csv.Add(tokens[0], string.IsNullOrWhiteSpace(tokens[1]) ? null : new DateTime?(tokens[1]));
+                    }
+                }
 			}
-			return null;
+			return new Dictionary<string, DateTime>();
 		}
 
 		public void AddResturant(string Name)
@@ -33,6 +41,7 @@ namespace LunchPicker.lib
 			{
 				throw new Exception($"{Name} already exists.");
 			}
+            csv.Add(Name, null);
 		}
 		public Dictionary<string, DateTime?> GetAllRestaurants(Enums.SortMethod method)
 		{

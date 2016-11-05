@@ -7,3 +7,6 @@ c:\users\jdavis2\documents\visual studio 2015\Projects\LunchPicker\LunchPicker\o
 c:\users\jdavis2\documents\visual studio 2015\Projects\LunchPicker\LunchPicker\obj\Debug\LunchPicker.csproj.GenerateResource.Cache
 c:\users\jdavis2\documents\visual studio 2015\Projects\LunchPicker\LunchPicker\obj\Debug\LunchPicker.exe
 c:\users\jdavis2\documents\visual studio 2015\Projects\LunchPicker\LunchPicker\obj\Debug\LunchPicker.pdb
+C:\Users\davis\Documents\LunchPicker\LunchPicker\LunchPicker\bin\Debug\LunchPicker.exe.config
+C:\Users\davis\Documents\LunchPicker\LunchPicker\LunchPicker\obj\Debug\LunchPicker.exe
+C:\Users\davis\Documents\LunchPicker\LunchPicker\LunchPicker\obj\Debug\LunchPicker.pdb
