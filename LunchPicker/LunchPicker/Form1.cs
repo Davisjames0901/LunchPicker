@@ -1,4 +1,5 @@
-﻿using System;
+﻿using LunchPicker.lib;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -12,9 +13,12 @@ namespace LunchPicker
 {
     public partial class Form1 : Form
     {
+        private RestaurantRepo repo;
         public Form1()
         {
             InitializeComponent();
+            repo = new RestaurantRepo();
+
         }
         
         private void manageRestuToolStripMenuItem_Click(object sender, EventArgs e)
@@ -24,17 +28,38 @@ namespace LunchPicker
 
 		private void button1_Click(object sender, EventArgs e)
 		{
-
-		}
+            string suggestion = string.Empty;
+            try
+            {
+                suggestion = repo.GetRandom();
+            }
+            catch 
+            {
+                MessageBox.Show("No Resturants!");
+                return;
+            }
+            if(MessageBox.Show(suggestion+"?","Confirm", MessageBoxButtons.YesNo)== DialogResult.Yes)
+            {
+                repo.LockInWinner(suggestion);
+            }
+        }
 
 		private void addNewToolStripMenuItem1_Click(object sender, EventArgs e)
 		{
-
+            var form = new AddNew(this, repo);
+            Hide();
+            form.Show();
 		}
 
 		private void exitToolStripMenuItem_Click(object sender, EventArgs e)
 		{
 
 		}
-	}
+        
+        private void Form1_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            repo.UpdateResturants();
+            Environment.Exit(0);
+        }
+    }
 }
