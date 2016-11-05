@@ -19,19 +19,21 @@ namespace LunchPicker.lib
 
         private Dictionary<string, DateTime?> LoadAndParseCsv()
         {
+            var file = new Dictionary<string, DateTime?>();
             if (File.Exists(CsvPath))
             {
                 var text = File.ReadAllLines(CsvPath);
                 foreach (var item in text)
                 {
                     var tokens = item.Split(',');
-                    if (!csv.ContainsKey(tokens[0]))
+                    if (!file.ContainsKey(tokens[0]))
                     {
-                        csv.Add(tokens[0], string.IsNullOrWhiteSpace(tokens[1]) ? null : (DateTime?)DateTime.Parse(tokens[1]));
+                        file.Add(tokens[0], string.IsNullOrWhiteSpace(tokens[1]) ? null : (DateTime?)DateTime.Parse(tokens[1]));
                     }
                 }
+
             }
-            return new Dictionary<string, DateTime?>();
+            return file;
         }
 
         public void AddResturant(string Name)
@@ -69,7 +71,7 @@ namespace LunchPicker.lib
             }
             if (!File.Exists(CsvPath))
             {
-                File.Create(CsvPath);
+                File.Create(CsvPath).Dispose();
             }
             File.WriteAllLines(CsvPath, Lines);
         }

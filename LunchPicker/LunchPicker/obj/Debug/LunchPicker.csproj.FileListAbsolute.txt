@@ -12,7 +12,6 @@ C:\Users\davis\Documents\LunchPicker\LunchPicker\LunchPicker\obj\Debug\LunchPick
 C:\Users\davis\Documents\LunchPicker\LunchPicker\LunchPicker\obj\Debug\LunchPicker.pdb
 C:\Users\davis\Documents\LunchPicker\LunchPicker\LunchPicker\bin\Debug\LunchPicker.exe
 C:\Users\davis\Documents\LunchPicker\LunchPicker\LunchPicker\bin\Debug\LunchPicker.pdb
-C:\Users\davis\Documents\LunchPicker\LunchPicker\LunchPicker\obj\Debug\LunchPicker.csprojResolveAssemblyReference.cache
 C:\Users\davis\Documents\LunchPicker\LunchPicker\LunchPicker\obj\Debug\LunchPicker.AddNew.resources
 C:\Users\davis\Documents\LunchPicker\LunchPicker\LunchPicker\obj\Debug\LunchPicker.Form1.resources
 C:\Users\davis\Documents\LunchPicker\LunchPicker\LunchPicker\obj\Debug\LunchPicker.Properties.Resources.resources
