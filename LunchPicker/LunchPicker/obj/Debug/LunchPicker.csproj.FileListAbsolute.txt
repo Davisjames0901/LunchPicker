@@ -16,3 +16,14 @@ C:\Users\davis\Documents\LunchPicker\LunchPicker\LunchPicker\obj\Debug\LunchPick
 C:\Users\davis\Documents\LunchPicker\LunchPicker\LunchPicker\obj\Debug\LunchPicker.Form1.resources
 C:\Users\davis\Documents\LunchPicker\LunchPicker\LunchPicker\obj\Debug\LunchPicker.Properties.Resources.resources
 C:\Users\davis\Documents\LunchPicker\LunchPicker\LunchPicker\obj\Debug\LunchPicker.csproj.GenerateResource.Cache
+C:\Users\jdavis2\Documents\James PlayGround\LunchPicker\LunchPicker\bin\Debug\LunchPicker.exe.config
+C:\Users\jdavis2\Documents\James PlayGround\LunchPicker\LunchPicker\obj\Debug\LunchPicker.exe
+C:\Users\jdavis2\Documents\James PlayGround\LunchPicker\LunchPicker\obj\Debug\LunchPicker.pdb
+C:\Users\jdavis2\Documents\James PlayGround\LunchPicker\LunchPicker\obj\Debug\LunchPicker.csprojResolveAssemblyReference.cache
+C:\Users\jdavis2\Documents\James PlayGround\LunchPicker\LunchPicker\obj\Debug\LunchPicker.AddNew.resources
+C:\Users\jdavis2\Documents\James PlayGround\LunchPicker\LunchPicker\obj\Debug\LunchPicker.Form1.resources
+C:\Users\jdavis2\Documents\James PlayGround\LunchPicker\LunchPicker\obj\Debug\LunchPicker.Manage.resources
+C:\Users\jdavis2\Documents\James PlayGround\LunchPicker\LunchPicker\obj\Debug\LunchPicker.Properties.Resources.resources
+C:\Users\jdavis2\Documents\James PlayGround\LunchPicker\LunchPicker\obj\Debug\LunchPicker.csproj.GenerateResource.Cache
+C:\Users\jdavis2\Documents\James PlayGround\LunchPicker\LunchPicker\bin\Debug\LunchPicker.exe
+C:\Users\jdavis2\Documents\James PlayGround\LunchPicker\LunchPicker\bin\Debug\LunchPicker.pdb

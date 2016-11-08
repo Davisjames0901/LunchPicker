@@ -14,7 +14,8 @@ namespace LunchPicker
     public partial class Form1 : Form
     {
         private RestaurantRepo repo;
-        public Form1()
+		private int seed = 0;
+		public Form1()
         {
             InitializeComponent();
             repo = new RestaurantRepo();
@@ -28,10 +29,10 @@ namespace LunchPicker
 
 		private void button1_Click(object sender, EventArgs e)
 		{
-            string suggestion = string.Empty;
+            var suggestion = string.Empty;
             try
             {
-                suggestion = repo.GetRandom();
+                suggestion = repo.GetRandom(seed);
             }
             catch 
             {
@@ -41,6 +42,10 @@ namespace LunchPicker
             if(MessageBox.Show(suggestion+"?","Confirm", MessageBoxButtons.YesNo)== DialogResult.Yes)
             {
                 repo.LockInWinner(suggestion);
+            }
+            else
+            {
+	            seed++;
             }
         }
 

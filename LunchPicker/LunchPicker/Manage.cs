@@ -23,12 +23,6 @@ namespace LunchPicker
             var dt = new DataTable();
             dt.Columns.Add("Name");
             dt.Columns.Add("Last Vistited");
-            DataRowBuilder drb = new DataRowBuilder();
-            foreach(var item in repo.GetAllRestaurants(Enums.SortMethod.Date))
-            {
-                var dr = new DataRow(drb);
-                dt.Rows.Add()
-            }
         }
 
         private void Manage_FormClosing(object sender, FormClosingEventArgs e)

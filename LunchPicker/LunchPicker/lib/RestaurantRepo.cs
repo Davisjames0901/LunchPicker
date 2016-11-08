@@ -81,14 +81,28 @@ namespace LunchPicker.lib
             csv.Remove(Name);
         }
 
-        public string GetRandom()
+        public string GetRandom(int seed = 0)
         {
-            var temp = csv?.FirstOrDefault().Key;
-            if (string.IsNullOrWhiteSpace(temp))
+	        var temp = csv?.OrderByDescending(x=>x.Key).ToList();
+	        var adjustedGroups = new List<KeyValuePair<string, DateTime?>>();
+	        var counter = 0;
+	        foreach (var item in temp)
+	        {
+		        counter++;
+		        for (var i = 0; i < counter; i++)
+		        {
+			        adjustedGroups.Add(item);
+		        }
+	        }
+			var rand = new Random(seed);
+	        var num = rand.Next(0, adjustedGroups.Count-1);
+	        var winner = adjustedGroups[num];
+			
+            if (string.IsNullOrWhiteSpace(winner.Key))
             {
                 throw new Exception();
             }
-            return temp;
+            return winner.Key;
         }
 
         public void LockInWinner(string Name)
