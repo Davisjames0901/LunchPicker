@@ -58,13 +58,13 @@ namespace LunchPicker
 
 		private void exitToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            repo.UpdateResturants();
+            repo.UpdateRestaurants();
             Environment.Exit(0);
         }
         
         private void Form1_FormClosing(object sender, FormClosingEventArgs e)
         {
-            repo.UpdateResturants();
+            repo.UpdateRestaurants();
             Environment.Exit(0);
         }
     }

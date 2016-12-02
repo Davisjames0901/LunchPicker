@@ -24,7 +24,7 @@ namespace LunchPicker
 
         private void btnAddNew_Click(object sender, EventArgs e)
         {
-            repo.AddResturant(txtNewText.Text);
+            repo.AddRestaurant(txtNewText.Text);
             Close();
             parent.Show();
         }

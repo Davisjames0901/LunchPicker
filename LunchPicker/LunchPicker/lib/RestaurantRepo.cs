@@ -28,7 +28,7 @@ namespace LunchPicker.lib
                     var tokens = item.Split(',');
                     if (!file.ContainsKey(tokens[0]))
                     {
-                        file.Add(tokens[0], string.IsNullOrWhiteSpace(tokens[1]) ? null : (DateTime?)DateTime.Parse(tokens[1]));
+                        file.Add(tokens[0], tokens.Length > 1 ? (DateTime?)DateTime.Parse(tokens[1]):null);
                     }
                 }
 
@@ -36,7 +36,7 @@ namespace LunchPicker.lib
             return file;
         }
 
-        public void AddResturant(string Name)
+        public void AddRestaurant(string Name)
         {
             if(string.IsNullOrWhiteSpace(Name))
             {
@@ -62,7 +62,7 @@ namespace LunchPicker.lib
             return null;
         }
 
-        public void UpdateResturants()
+        public void UpdateRestaurants()
         {
             var Lines = new List<string>();
             foreach (var item in csv)
@@ -76,7 +76,7 @@ namespace LunchPicker.lib
             File.WriteAllLines(CsvPath, Lines);
         }
 
-        public void RemoveResturant(string Name)
+        public void RemoveRestaurant(string Name)
         {
             csv.Remove(Name);
         }
