@@ -25,7 +25,7 @@ namespace LunchPicker.lib
                     var tokens = item.Split(',');
                     if (!file.ContainsKey(tokens[0]))
                     {
-                        file.Add(tokens[0], tokens.Length > 1 ? (DateTime?)DateTime.Parse(tokens[1]):null);
+                        file.Add(tokens[0], string.IsNullOrWhiteSpace(tokens[1])? null:(DateTime?)DateTime.Parse(tokens[1]));
                     }
                 }
 
